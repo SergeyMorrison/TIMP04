@@ -16,8 +16,7 @@ jobs:
              cd solver_application
           mkdir build && cd build
           cmake ..
-          make
-          
+          make          
       - name: build hello
         run: |
           cd hello_world_application
