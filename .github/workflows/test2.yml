@@ -13,7 +13,7 @@ jobs:
       
       - name: build solver application
         run: |
-             cd solver_application
+          cd solver_application
           mkdir build && cd build
           cmake ..
           make          
