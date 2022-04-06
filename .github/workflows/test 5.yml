@@ -1,0 +1,23 @@
+name: test
+on: [push]
+jobs:
+  Test_Build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+        
+      - name: build solver application
+        run: |
+          cd solver_application
+          mkdir build && cd build
+          cmake ..
+          make
+             
+      - name: build hello
+        run: |
+          cd hello_world_application
+          mkdir build && cd build
+          cmake ..
+          make
