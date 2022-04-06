@@ -5,7 +5,7 @@ on:
     branches:
       - master
 jobs:
-  my_build:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: clone-repo
